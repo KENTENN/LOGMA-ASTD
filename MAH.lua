@@ -1,4 +1,4 @@
-repeat task.wait() until game:IsLoaded(3)
+repeat task.wait() until game:IsLoaded()
 local LV = workspace.Camera.asdzxccg_0248.Head.NameLevelBBGUI.LevelFrame.TextLabel.Text
 local level = tonumber(string.match(LV,"%d+"))
 local Gold = game:GetService("Players").LocalPlayer.PlayerGui.HUD.BottomFrame.CurrencyList.Coins.Amount.Text
@@ -9,5 +9,5 @@ local message = "👾Level :" .. level ..  "    🪙Gold :" .. Gold .. "    💎
 
 while true do
 _G.Horst_SetDescription(message)
-task.wait(5)
+task.wait(3)
 end
