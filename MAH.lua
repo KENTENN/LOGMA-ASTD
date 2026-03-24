@@ -7,4 +7,7 @@ local stardust =  game:GetService("Players").LocalPlayer.PlayerGui.HUD.BottomFra
 
 local message = "👾Level :" .. level ..  "    🪙Gold :" .. Gold .. "    💎Gems :" .. Gems .. "    ⭐stardust :"  .. stardust
 
+while true do
 _G.Horst_SetDescription(message)
+task.wait(3)
+end
