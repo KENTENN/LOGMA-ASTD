@@ -1,11 +1,10 @@
-repeat task.wait() until game:IsLoaded()
+repeat task.wait() until game:IsLoaded(3)
 
 local Players = game:GetService("Players")
 local Plr = Players.LocalPlayer.Name
 
 local LV = workspace.Camera[Plr].Head.NameLevelBBGUI.LevelFrame.TextLabel.Text
 local level = tonumber(string.match(LV,"%d+"))
-local LV = asdxz
 local Gems = Players.LocalPlayer.Backpack.Framework.TasksV2.TaskCard.TaskCardTemplate.ClaimButton.GemsAmount.Text
 local stardust =  Players.LocalPlayer.PlayerGui.HUD.BottomFrame.CurrencyList.Stardust.Amount.Text
 local Gold = Players.LocalPlayer.PlayerGui.HUD.BottomFrame.CurrencyList.Coins.Amount.Text
