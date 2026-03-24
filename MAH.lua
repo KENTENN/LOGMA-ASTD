@@ -11,7 +11,6 @@ local stardust =  Players.LocalPlayer.PlayerGui.HUD.BottomFrame.CurrencyList.Sta
 local Gold = Players.LocalPlayer.PlayerGui.HUD.BottomFrame.CurrencyList.Coins.Amount.Text
 
 local message = "👾Level :" .. level ..  "    🪙Gold :" .. Gold .. "    💎Gems :" .. Gems .. "    ⭐stardust :"  .. stardust
-
 while true do
 _G.Horst_SetDescription(message)
 task.wait(3)
